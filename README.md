@@ -1,14 +1,14 @@
-# ANSIBLE ROS2
+# ANSIBLE ROS
 
 ## Usage
-Installing ROS2
+Installing ROS
 ```bash
-ansible-pull -U https://github.com/brucechanjianle/ansible-ros -e "ros2_distribution=noetic" -K
+ansible-pull -U https://github.com/brucechanjianle/ansible-ros -e "ros_distribution=noetic" -K
 ```
 
 For Docker
 ```bash
-ansible-pull -U https://github.com/brucechanjianle/ansible-ros -e "ros2_distribution=noetic"
+ansible-pull -U https://github.com/brucechanjianle/ansible-ros -e "ros_distribution=noetic"
 ```
 
 ## Reference
