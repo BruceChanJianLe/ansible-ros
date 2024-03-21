@@ -1,0 +1,24 @@
+- hosts: localhost
+  vars:
+    ros_gpg_key_url: "https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc"
+    ros_repository_url: "http://packages.ros.org/ros/ubuntu"
+    # Options: bouncy; crystal; dashing (LTS); eloquent; foxy (LTS)
+    ros2_distribution: noetic
+    # Options: desktop-full (recommended); desktop (ros-base + tools) ros-base (bare bones)
+    ros_configuration: desktop-full
+
+  pre_tasks:
+  - name: Update Apt
+    become: true
+    apt:
+      upgrade: yes
+      force_apt_get: true
+      update_cache: true
+      cache_valid_time: 86400 #One day
+      state: present
+    tags:
+      - setup
+
+  tasks:
+    - include: tasks/ros-install.yml
+
