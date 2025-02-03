@@ -1,8 +1,8 @@
 # ANSIBLE ROS
 
 A quick way to install ROS on Ubuntu with ansible playbook!
-If you are using ROS2 please refer to this [repo](https://github.com/brucechanjianle/ansible-ros2).
 
+> If you are using ROS2 please refer to this [repo](https://github.com/brucechanjianle/ansible-ros2).
 
 ## Dependencies
 
