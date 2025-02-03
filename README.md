@@ -1,5 +1,11 @@
 # ANSIBLE ROS
 
+## Dependencies
+
+```bash
+sudo apt install ansible git -y
+```
+
 ## Usage
 Installing ROS
 ```bash
